@@ -12,7 +12,7 @@ module GameOfLife
     end
 
     def dead?
-      true
+      @state == DEAD
     end
   end
 end

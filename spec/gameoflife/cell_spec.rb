@@ -11,5 +11,10 @@ module GameOfLife
       cell = Cell.new(GameOfLife::Cell::DEAD)
       expect(cell.dead?).to eq(true)
     end
+
+    it "should respond to dead?" do 
+      cell = Cell.new(GameOfLife::Cell::ALIVE)
+      expect(cell.dead?).to eq(false)
+    end
   end
 end
